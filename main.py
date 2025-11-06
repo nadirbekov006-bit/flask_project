@@ -1,125 +1,44 @@
-# app.py
+"""
+flask
+"""
+
 from flask import Flask
 
 app = Flask(__name__)
 
-# Маршрут 1: Главная страница
-@app.route('/')
-def home():
-    return 'Добро пожаловать на главную страницу!'
 
-# Маршрут 2: Приветствие
-@app.route('/hello')
+@app.route("/")
 def hello():
-    return 'Привет! Это маршрут /hello.'
+    return "Hello World"
 
-# Маршрут 3: Информация о сервере
-@app.route('/about')
-def about():
-    return 'Это простое Flask-приложение с несколькими маршрутами.'
 
-# Маршрут 4: Тестовый маршрут с параметром
-@app.route('/user/<name>')
-def user(name):
-    return f'Привет, {name}! Ты на маршруте /user/<name>.'
+@app.route("/about_me")
+def about_me():
+    return "my name is Islam"
 
-# Маршрут 5: Статус
-@app.route('/status')
-def status():
-    return 'Сервер работает нормально. Статус: OK.'
+@app.route("/boxing")
+def boxing():
+    return "im train boxing every single day"     
 
-if __name__ == '__main__':
-    app.run(debug=True)# app.py
-from flask import Flask
 
-app = Flask(__name__)
+@app.route("/ABV")
+def ABV():
+    return "права алыш крк"    
 
-# Маршрут 1: Главная страница
-@app.route('/')
-def home():
-    return 'Добро пожаловать на главную страницу!'
 
-# Маршрут 2: Приветствие
-@app.route('/hello')
-def hello():
-    return 'Привет! Это маршрут /hello.'
+@app.route("/profil")
+def profil():
+    return "G30" 
 
-# Маршрут 3: Информация о сервере
-@app.route('/about')
-def about():
-    return 'Это простое Flask-приложение с несколькими маршрутами.'
 
-# Маршрут 4: Тестовый маршрут с параметром
-@app.route('/user/<name>')
-def user(name):
-    return f'Привет, {name}! Ты на маршруте /user/<name>.'
+@app.route("/BMW")
+def BMW():
+    return "M5 f90"
+    
 
-# Маршрут 5: Статус
-@app.route('/status')
-def status():
-    return 'Сервер работает нормально. Статус: OK.'
+if __name__ == "__main__":
+    app.run(
+        debug=True,
+    )
 
-if __name__ == '__main__':
-    app.run(debug=True)# app.py
-from flask import Flask
 
-app = Flask(__name__)
-
-# Маршрут 1: Главная страница
-@app.route('/')
-def home():
-    return 'Добро пожаловать на главную страницу!'
-
-# Маршрут 2: Приветствие
-@app.route('/hello')
-def hello():
-    return 'Привет! Это маршрут /hello.'
-
-# Маршрут 3: Информация о сервере
-@app.route('/about')
-def about():
-    return 'Это простое Flask-приложение с несколькими маршрутами.'
-
-# Маршрут 4: Тестовый маршрут с параметром
-@app.route('/user/<name>')
-def user(name):
-    return f'Привет, {name}! Ты на маршруте /user/<name>.'
-
-# Маршрут 5: Статус
-@app.route('/status')
-def status():
-    return 'Сервер работает нормально. Статус: OK.'
-
-if __name__ == '__main__':
-    app.run(debug=True)# app.py
-from flask import Flask
-
-app = Flask(__name__)
-
-# Маршрут 1: Главная страница
-@app.route('/')
-def home():
-    return 'Добро пожаловать на главную страницу!'
-
-# Маршрут 2: Приветствие
-@app.route('/hello')
-def hello():
-    return 'Привет! Это маршрут /hello.'
-
-# Маршрут 3: Информация о сервере
-@app.route('/about')
-def about():
-    return 'Это простое Flask-приложение с несколькими маршрутами.'
-
-# Маршрут 4: Тестовый маршрут с параметром
-@app.route('/user/<name>')
-def user(name):
-    return f'Привет, {name}! Ты на маршруте /user/<name>.'
-
-# Маршрут 5: Статус
-@app.route('/status')
-def status():
-    return 'Сервер работает нормально. Статус: OK.'
-
-if __name__ == '__main__':
-    app.run(debug=True)
